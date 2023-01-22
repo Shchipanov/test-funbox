@@ -1,4 +1,9 @@
 .product {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
 
   color: $color-default-black;
@@ -6,7 +11,7 @@
 
   @include retina {
     background-image: url("../img/background/pattern@2x.png");
-    background-size: cover;
+    background-size: contain;
   }
 
   &::before {
