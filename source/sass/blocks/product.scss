@@ -6,7 +6,7 @@
 
   @include retina {
     background-image: url("../img/background/pattern@2x.png");
-    background-size: contain;
+    background-size: cover;
   }
 
   &::before {
@@ -126,7 +126,7 @@
 
   @include retina {
     background-image: url("../img/background/cat@2x.png");
-    background-size: cover;
+    background-size: contain;
   }
 
   &::before {

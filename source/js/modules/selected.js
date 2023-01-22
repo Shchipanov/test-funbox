@@ -32,24 +32,24 @@ function getSelectCard() {
 function hoverCard() {
   for (let i = 0; i < items.length; i++) {
     items[i].onmouseover = items[i].onmouseout = handler;
+  }
+}
 
-    function handler(evt) {
-      if (evt.type == 'mouseover') {
-        for (var i = 0; i < items.length; i++) {
-          if (items[i].classList.contains('selected')) {
-            title[i].innerHTML = 'Котэ не одобряет?';
-            title[i].style.color = '#e52e7a';
-          }
-        }
+function handler(evt) {
+  if (evt.type === 'mouseover') {
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].classList.contains('selected')) {
+        title[i].innerHTML = 'Котэ не одобряет?';
+        title[i].style.color = '#e52e7a';
       }
+    }
+  }
 
-      if (evt.type == 'mouseout') {
-        for (var i = 0; i < items.length; i++) {
-          if (items[i].classList.contains('selected')) {
-            title[i].innerHTML = 'Сказочное заморское яство';
-            title[i].style.color = '#666666';
-          }
-        }
+  if (evt.type === 'mouseout') {
+    for (let i = 0; i < items.length; i++) {
+      if (items[i].classList.contains('selected')) {
+        title[i].innerHTML = 'Сказочное заморское яство';
+        title[i].style.color = '#666666';
       }
     }
   }

@@ -14,4 +14,3 @@ function becomeDisabled() {
 }
 
 export {becomeDisabled};
-
