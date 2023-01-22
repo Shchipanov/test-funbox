@@ -619,6 +619,17 @@ button,
 }
 
 .product {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   color: #000000;
   background-image: url("../img/background/pattern.png");
@@ -964,7 +975,7 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .product {
     background-image: url("../img/background/pattern@2x.png");
-    background-size: cover;
+    background-size: contain;
   }
 
   .product__card {
